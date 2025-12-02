@@ -17,6 +17,7 @@ Bu çalışmada, standart bir Autoencoder yapısı üzerine önemli iyileştirme
 Yapılan optimizasyonlar sonucunda modelin eğitim ve doğrulama kaybında ciddi bir düşüş sağlanmıştır:
 
 | Metrik | Önceki Durum | **Şimdiki Durum (Optimize Edilmiş)** |
+| :--- | :--- | :--- |
 | **Training Loss** | 0.2620 | **0.0066** |
 | **Validation Loss** | 0.2648 | **0.0069** |
 
