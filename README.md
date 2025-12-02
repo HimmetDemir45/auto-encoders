@@ -43,30 +43,39 @@ Average PSNR: 22.45 dB
 Std PSNR: 2.10 dB
 Min PSNR: 15.30 dB
 Max PSNR: 28.90 dB
+```
 
-🧠 Model Architecture
-The model processes a 784 (28x28) dimensional input vector through a symmetric encoder-decoder structure:
+## 🧠 Model Architecture
 
-Encoder:
+The model processes a `784` (28x28) dimensional input vector through a symmetric encoder-decoder structure:
 
-Input (784) -> Dense(256, ReLU) -> Dense(128, ReLU) -> Latent Space (64)
+**Encoder:**
+* Input (784) -> Dense(256, ReLU) -> Dense(128, ReLU) -> **Latent Space (64)**
 
-Decoder:
+**Decoder:**
+* Latent Space (64) -> Dense(128, ReLU) -> Dense(256, ReLU) -> Output (784, Sigmoid)
 
-Latent Space (64) -> Dense(128, ReLU) -> Dense(256, ReLU) -> Output (784, Sigmoid)
+## 🛠️ Installation and Usage
 
-🛠️ Installation and Usage
-Requirements
+### Requirements
 To run this project, you will need the following libraries:
-pip install tensorflow numpy matplotlib
 
-Running the Project
+```bash
+pip install tensorflow numpy matplotlib
+```
+
+### Running the Project
 Clone the repository and run the main script:
+
+```bash
 git clone [https://github.com/HimmetDemir45/auto-encoders.git](https://github.com/HimmetDemir45/auto-encoders.git)
 cd auto-encoders
 python autoENcoders.py
+```
 
-👨‍💻 Author
-Himmet
+## 👨‍💻 Author
 
-This project is open-source and developed for educational purposes.
+* **Himmet**
+
+---
+*This project is open-source and developed for educational purposes.*
